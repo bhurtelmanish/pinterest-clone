@@ -1,0 +1,11 @@
+.active{
+    opacity: 1;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.inactive{
+    opacity: 0;
+    transition: 0.3s ease;
+    display: none;
+}

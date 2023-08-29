@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.08s ease;
+}
+
+:root{
+    --iconColor: rgb(95,95,95);
+    --hoverColor: rgb(233,233,233);
+    --redColor: rgb(230,0,35);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-search-cancel-button{
+    display: none;
+}
