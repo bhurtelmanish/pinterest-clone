@@ -24,12 +24,12 @@ const Navbar = () => {
   } , [])
   return (
     <>
+    {/* Navbar Container */}
      <div className='h-12 w-screen flex items-center px-4 py-10 bg-slate-100 '>
         <div className='flex items-center gap-2'> 
            <div className='hover:bg-[var(--hoverColor)] h-fit w-fit px-3 py-3 rounded-[50%] cursor-pointer'><img src={logo} alt="Pinterest Logo" className='h-8'/></div>
              <div className='flex hover:bg-[var(--hoverColor)] cursor-pointer h-fit w-fit px-3 py-3 rounded-3xl relative'
-              onClick={()=>{setisVisible(!isVisible)}}
-             >
+              onClick={()=>{setisVisible(!isVisible)}}>
                 <li>Home</li>
                 <MdOutlineKeyboardArrowDown className='text-2xl'/>
                 <HomeDropdown isVisible={isVisible} menuRef={menuRef}/>
